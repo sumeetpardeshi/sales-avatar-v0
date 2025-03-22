@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 p-0;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-semibold transition-colors duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white;
+  }
+  
+  .btn-danger {
+    @apply bg-red-600 hover:bg-red-700 text-white;
+  }
+
+  main {
+    @apply h-screen bg-gray-900 p-8 text-white;
+  }
+
+  .token-form {
+    @apply flex flex-col gap-4 p-4 w-96 max-w-full mx-auto items-center;
+  }
+
+  .token-form label {
+    @apply font-medium text-white text-base;
+  }
+}
+
+.token-form div {
+  display: flex;
+  gap: 0.5rem;
+}
